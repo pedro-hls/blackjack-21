@@ -26,8 +26,19 @@ body {
     align-items: center;
 }
 
-.result-container {
-    transition: 4s;
+.git-hub-icon {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.git-hub-icon > svg {
+    opacity: 40%;
+    transition: 1s;
+    filter: invert(1);
+}
+
+.git-hub-icon > svg:hover {
+    opacity: 100%;
 }
 
 .blackjack-container {
@@ -48,6 +59,7 @@ body {
     padding: 40px 20px;
     border-radius: 5px;
     transition: 1s;
+    height: 480px;
 }
 
 h1 {
@@ -74,6 +86,11 @@ h1 {
     text-align: center;
     border-radius: 5px;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+h3, button, p {
+    color: #E6E6E6;
 }
 
 .buttons:hover {
@@ -82,6 +99,11 @@ h1 {
 
 .buttons:disabled:hover {
     background-color: #0d0d0d;
+    cursor: auto;
+}
+
+.buttons:disabled {
+    color: #464646;
 }
 
 p {
@@ -101,11 +123,22 @@ p {
 .result-container {
     margin: 40px;
     margin-top: 60px;
+    height: 60px;
+    font-weight: bold;
 }
 
-h3 {
+.result-text {
+    transition: 5s;
+
+}
+
+.label {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.none {
+    display: none;
 }
 
 .display-none {
