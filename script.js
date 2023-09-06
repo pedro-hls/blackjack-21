@@ -4,7 +4,7 @@ let hitButton = document.querySelector(".hit-button")
 
 let standButton = document.querySelector(".stand-button")
 
-let result = document.querySelector(".result-container")
+let result = document.querySelector(".result-text")
 
 hitButton.disabled = true
 
@@ -138,6 +138,14 @@ function start(){
     standButton.disabled = false
 
     result.innerHTML = ""
+
+    let i = 0
+    while(i < 4){
+        let label = document.querySelectorAll('.label')[i]
+        label.classList.remove('none')
+        console.log('a')
+        i++
+    }
 }
 
 
